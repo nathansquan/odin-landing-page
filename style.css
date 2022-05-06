@@ -1,14 +1,19 @@
 body {
     margin: 0px;
 }
-.header {
+
+.header,
+.hero {
     background-color: #1F2937;
     font-family: sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 .logo {
@@ -27,9 +32,51 @@ ul {
     gap: 24px;
 }
 
+a,
+.hero-secondary-text {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
 a {
     /* this removes the line under the links */
     text-decoration: none;
-    color: #E5E7EB;
+
+}
+
+.hero {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 34px;
+}
+
+.text-and-button {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 600;
+}
+
+.hero-sign-up-button button {
+    background-color: #3882F6;
     font-size: 18px;
+    color: #E5E7EB;
+    border: none;
+    padding: 5px 24px; 
+    border-radius: 8px;
+}
+
+.image img {
+    max-width: 400px;
+}
+
+figcaption {
+    color: #E5E7EB;
+    font-size: 12px;
 }
