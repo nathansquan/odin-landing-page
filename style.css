@@ -3,12 +3,15 @@ body {
 }
 
 .header,
-.hero {
-    background-color: #1F2937;
+.hero,
+.info {
     font-family: sans-serif;
     padding-left: 200px;
     padding-right: 200px;
 }
+
+.header,
+.hero { background-color: #1F2937; }
 
 .header {
     display: flex;
@@ -60,7 +63,8 @@ a {
 .hero-main-text {
     font-size: 48px;
     color: #F9FAF8;
-    font-weight: 600;
+    /* 800 is considered extra bold */
+    font-weight: 800;
 }
 
 .hero-sign-up-button button {
@@ -72,11 +76,49 @@ a {
     border-radius: 8px;
 }
 
-.image img {
+.hero .image img {
     max-width: 400px;
 }
 
+.info {
+    /* center info title and contents */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 figcaption {
-    color: #E5E7EB;
+    color: #1F2937;
     font-size: 12px;
+    text-align: center;
+    /* make the figcaption only as wide as the image */
+    max-width: 150px;
+}
+
+.info .title {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 800;
+    padding: 50px;
+}
+
+.info .images {
+    /* allow images to be arranged horizontally */
+    display: flex;
+    gap: 50px;
+}
+
+.info .image {
+    /* center the image and figcaption */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info .image img {
+    max-width: 150px;
+    border-radius: 10%;
+    /* add blue border around images */
+    border: 3px solid #3882F6;
 }
