@@ -121,7 +121,7 @@ figcaption {
 
 .info .image img {
     max-width: 150px;
-    border-radius: 10%;
+    border-radius: 10px;
     /* add blue border around images */
     border: 3px solid #3882F6;
 }
@@ -147,4 +147,41 @@ figcaption {
     margin: 40px;
     font-size: 20px;
     font-weight: 700;
+}
+
+.sign-up-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3882F6;
+    margin: 100px 200px;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+.sign-up .text {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.sign-up .text .call-to-action {
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.sign-up .text .sign-up-text {
+    color: #E5E7EB;
+    font-size: 15px;
+}
+
+.sign-up .sign-up-box button {
+    background-color: #3882F6;
+    font-size: 18px;
+    color: #F9FAF8;
+    border-style: solid;
+    border-color: #F9FAF8;
+    padding: 5px 24px; 
+    border-radius: 8px;
 }
